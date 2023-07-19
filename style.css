@@ -431,6 +431,7 @@ width: 100%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 5px;
+  margin-bottom: 30px;
 }
 .icon-button>button{
   width:100%;
@@ -512,6 +513,9 @@ width: 100%;
   grid-template-columns: repeat(3,1fr);
   gap: 5px;
 }
+.icon-title-container{
+  margin-bottom: 40px;
+}
 .icon-button>button{
   width:100%;
   margin: 0;
@@ -523,6 +527,13 @@ width: 100%;
 }
 .icon-button>h4{
 font-size: 0.5rem;
+}
+.footer-section{
+  width: 100%;
+}
+.footer-container{
+  width: 90%;
+  margin: auto;
 }
 
 }
