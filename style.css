@@ -129,6 +129,7 @@ font-weight: 500;
   padding: 10px 20px;
   border-radius: 20px;
   background: #4EC5F7;
+  color: #FFF;
   border: 0;
 }
 .banner-btn .btn-1{
@@ -137,6 +138,7 @@ font-weight: 500;
   border-radius: 20px;
   background: #FF42A5;
   border: 0;
+  color: #FFF;
 }
 
 .banner-image{
@@ -210,6 +212,7 @@ font-weight: 400;
 .online-card .play-btn:hover{
 background-color:#FF42A5;
   color:#FFF;
+  opacity: 0.8;
 }
 
 .online-card>p{
