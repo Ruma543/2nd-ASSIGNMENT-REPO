@@ -126,7 +126,6 @@ font-size: 1.25rem;
 font-weight: 500;
 }
 .banner-btn .btn-2{
-  margin-right: 20px;
   padding: 10px 20px;
   border-radius: 20px;
   background: #4EC5F7;
@@ -134,10 +133,10 @@ font-weight: 500;
   border: 0;
 }
 .banner-btn .btn-1{
-  margin-right: 20px;
   padding: 10px 20px;
   border-radius: 20px;
   background: #FF42A5;
+  margin-right: 10px;
   border: 0;
   color: #FFF;
 }
@@ -178,7 +177,7 @@ background-clip: text;
 .online-description{
   color: #534C64;
 text-align: center;
-font-size: 1.12rem;
+font-size: 1.6rem;
 font-weight: 400;
 }
 .card-container{
@@ -286,7 +285,7 @@ background-clip: text;
 font-size: 1.12rem;
 font-weight: 400; 
 text-align: left;
-margin-top: 0;
+margin-top: 20px;
 }
 .play-game-image-part{
   width: 50%;
@@ -299,7 +298,7 @@ margin-top: 0;
   width: 30%;
   position: relative;
   top: -120px;
-  left: 450px;
+  left: 500px;
   border-radius: 8px;
 }
 /* icon title section */
