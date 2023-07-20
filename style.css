@@ -253,9 +253,6 @@ position: relative;
  .content>button:hover{
   color: red;
 }
-/* .content>h2:hover{
-  color: red;
-}  */
 .image-description{
   color: #534C64;
 font-size: 1.12rem;
