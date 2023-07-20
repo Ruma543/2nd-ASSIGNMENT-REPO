@@ -59,6 +59,9 @@ font-size: 1.12rem;
 font-weight: 500;
 margin-right: 30px;
 }
+.navigation-item>a:hover{
+  color: #F948B2;
+}
 .navigation-item .follow-btn{
  border-radius: 8px;
  padding: 14px;
@@ -68,6 +71,9 @@ text-align: center;
 font-size: 1.12rem;
 font-weight: 500;
 border: 0;
+}
+.navigation-item .follow-btn:hover{
+  color: #FF42A5;
 }
 .fa-brands{ margin: 5px;}
 /* banner section */
@@ -132,6 +138,9 @@ font-weight: 500;
   color: #FFF;
   border: 0;
 }
+.banner-btn .btn-2:hover{
+  color:blue;
+}
 .banner-btn .btn-1{
   padding: 10px 20px;
   border-radius: 20px;
@@ -139,6 +148,9 @@ font-weight: 500;
   margin-right: 10px;
   border: 0;
   color: #FFF;
+}
+.banner-btn .btn-1:hover{
+  color:blue;
 }
 
 .banner-image{
@@ -241,9 +253,9 @@ position: relative;
  .content>button:hover{
   color: red;
 }
-.content>h2:hover{
+/* .content>h2:hover{
   color: red;
-} 
+}  */
 .image-description{
   color: #534C64;
 font-size: 1.12rem;
@@ -445,7 +457,7 @@ margin-top: 0px;
   .banner-content{
     width: 100%;
     margin: auto;
-    padding: 60px;
+    padding:20px 50px;
   }
   .title-description{
     font-size: 2rem;
@@ -457,6 +469,11 @@ margin-top: 0px;
   .group-img{
     width: 100%;
     padding: 5px;
+  }.online-game{
+    margin-bottom:5px;
+  }
+  .online-heading{
+    font-size: 2.4rem;
   }
   .card{
     width: 100%;
@@ -476,10 +493,15 @@ margin-top: 0;
   padding-bottom: 0;
   margin-bottom: 30px;
 }
-.play-game-title,.play-game-description{
+.play-game-title{
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 0;
+}
+.play-game-description{
   text-align: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .play-game-image-part{
   width: 100%;
@@ -557,6 +579,12 @@ font-size: 0.8rem;
   .banner-content{
     width: 80%;
     margin: auto;
+    padding: 100px;
+  }
+  .title-description{font-size: 2rem}
+  .title{ font-size: 3rem;}
+  .online-game{
+    margin-bottom: 0;
   }
   .card-wraper{
     display: grid;
@@ -581,6 +609,7 @@ margin-bottom: 0;
   width: 90%;
   margin:0 auto;
   text-align: center;
+  padding-top:0px;
   padding-bottom: 0;
   margin-bottom: 30px;
 }
