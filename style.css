@@ -77,6 +77,7 @@ border: 0;
    display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 .banner-container{
   width: 100%;
@@ -158,7 +159,7 @@ main{
 /* online game section style */
 .online-game{
   width: 90%;
-  margin: auto;
+  margin:0 auto;
   margin-bottom: 100px;
 }
 .online-heading{
@@ -180,50 +181,80 @@ text-align: center;
 font-size: 1.12rem;
 font-weight: 400;
 }
-.online-cards{
+.card-container{
+  width: 100%;
+  margin: auto;
+}
+.card-wraper{
   width: 100%;
   margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
-.online-card{
- width: 100%;
- position: relative;
+.card{
+  width: 280px;
+  margin: auto;
 }
-.online-card>img{
-  width:90%;
+.image{
+  width: 100%;
+position: relative;
+}
+.image>img{
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin: auto;
+}
+.content{
+  width: 100%;
+  margin:auto ;
   height: 100%;
-  border-radius: 16px;
-}
-.online-card .play-btn{
+  top: 0;
+  left: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-70%,-150%);
-  background-color:#8758F1;
-  color: green;
-  font-size: 20px;
-  padding: 10px 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: 40%;
-  text-align: center;
+  background: rgba(0, 0,0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+  gap: 0px;
+  border-radius: 12px;
+  border: 5px solid white;
 }
-
-.online-card .play-btn:hover{
-background-color:#FF42A5;
-  color:#FFF;
-  opacity: 0.8;
+.content:hover{
+  opacity: 1;
+  border: 5px solid violet;
+  color:violet;
 }
-
-.online-card>p{
-  width: 95%;
+.content>h2{
+  color:#f0f0f0;
+}
+.content>button{
+  margin-top:145px ;
+  border-radius: 10%;
+  border: 0;
+  font-size: 2;
+  color: rgba(175, 40, 135, 1);
+  background-color: white;
+} 
+ .content>button:hover{
+  color: red;
+}
+.content>h2:hover{
+  color: red;
+} 
+.image-description{
+  color: #534C64;
+font-size: 1.12rem;
+font-weight: 500;
 }
 /* play game section style */
 .play-game-section{
   width: 90%;
   margin: auto;
+  margin-top: 0;
 }
 .play-game-container{
   display: flex;
@@ -232,16 +263,17 @@ background-color:#FF42A5;
   flex-direction: row-reverse ;
 }
 .play-game-content{
-  width: 50%;
-  margin-left: 100px;
+  width: 40%;
+  /* margin-left: 100px; */
+  align-items: center;
+  padding-bottom:250px;
 }
 .play-game-title{
 font-size: 3rem;
 font-weight: 700;
 text-align: left;
 margin-bottom: 5px;
-margin-top: -50px;
-
+padding-top:-250px;
 }
 .play-game-title>span{
   background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -389,7 +421,7 @@ margin-top: 0px;
 
 
 @media screen and (max-width:576px) {
-  .navber, .nevigation-menu,.online-cards,
+  .navber, .nevigation-menu,.card-wraper,
   .play-game-container{
     flex-direction: column;
   }
@@ -427,38 +459,32 @@ margin-top: 0px;
     width: 100%;
     padding: 5px;
   }
-  /* .content-part{
-    width: 90%;
-    margin: auto;
-  }
-  .banner-content{
-    padding:40px 30px;
+  .card{
     width: 100%;
-  } */
-  .online-card{
-    width: 90%;
-    margin: auto;
+    margin: 0 auto;
   }
-.online-card>img{
-  width: 100%;
-}
-.online-card>p{
-  text-align: center;
+  .image-description{
+font-size: 1.12rem;
+text-align: center;
 }
 .play-game-container{
 width: 100%;
+margin-top: 0;
 }
 .play-game-content{
   width: 100%;
-  margin: auto;
+  margin:0 auto;
+  padding-bottom: 0;
+  margin-bottom: 30px;
 }
 .play-game-title,.play-game-description{
   text-align: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 .play-game-image-part{
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 .play-large-img{
   width: 90%;
@@ -518,7 +544,7 @@ font-size: 0.8rem;
 }
 
 @media screen and (min-width:576px) and (max-width:960px) {
-   .navber,.banner-container,.online-cards,.play-game-container{
+   .navber,.banner-container,.play-game-container{
     flex-direction: column;
    }
    .banner-image{
@@ -533,30 +559,42 @@ font-size: 0.8rem;
     width: 80%;
     margin: auto;
   }
-  .online-card{
-    width: 80%;
-    margin: auto;
+  .card-wraper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
   }
-.online-card>img{
-  width: 100%;
-}
-.online-card>p{
-  width: 100%;
-  text-align: center;
-}
-.play-game-container,.play-game-image-part{
+  .card{
+    width: 100%;
+  }
+  .image-description{
+    text-align: center;
+    font-size: 1.3rem;
+  }
+.play-game-container{margin-top: 0;
+margin-bottom: 0;}
+.play-game-image-part{
 width: 100%;
+margin-top: 0;
+margin-bottom: 0;
 }
 .play-game-content{
   width: 90%;
-  margin: auto;
+  margin:0 auto;
   text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 30px;
 }
 .play-game-title,.play-game-description{
   text-align: center;
 }
+.play-game-description{
+font-size: 1.5rem;
+margin-top: 20px;
+}
 .play-large-img{
   width: 90%;
+  margin-top: 0;
 }
 .side-img{
   width: 30%;
